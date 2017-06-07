@@ -24,10 +24,10 @@ void draw() {
     cam.loadPixels();
     for (int i = 0; i < numPixels; i++) {
       color currentColor = cam.pixels[i];
-      int currentR = (currentColor >> 16) & 0xFF; // Like red(), but faster
+      int currentR = (currentColor >> 16) & 0xFF; 
       int currentG = (currentColor >> 8) & 0xFF;
       int currentB = currentColor & 0xFF;
-      frameSumR[i] += currentR; // will overflow
+      frameSumR[i] += currentR; // TODO will overflow
       frameSumG[i] += currentG;
       frameSumB[i] += currentB;
       int newR = int(float(frameSumR[i])/float(count));
