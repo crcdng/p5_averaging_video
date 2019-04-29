@@ -6,7 +6,7 @@ int[] frameAverage, frameSumB, frameSumG, frameSumR;
 int count = 0;
 
 void setup() {
-  size(640, 480);
+  size(1280, 720); // 720p 
   cam = new Capture(this, width, height);
   cam.start();
   numPixels = cam.width * cam.height;
@@ -37,4 +37,9 @@ void draw() {
     }
     updatePixels();
   }
+}
+
+void mouseClicked() {
+  String filename = "" + year() + "_" + month() + "_" + day() + "_" + hour() + "_" + minute() + "_" + second() + "_" + "averaging.png";
+  saveFrame(filename);
 }
