@@ -7,7 +7,16 @@ int count = 0;
 
 void setup() {
   size(1280, 720); // 720p 
-  cam = new Capture(this, width, height);
+  
+  // Video library 1.0.1
+  // cam = new Capture(this, width, height);
+  
+  // Video library 2.0-beta-4, Mac OSX 15 Catilina
+  String[] cameras = Capture.list();
+  // if you have more than one (virtual) cameras, select from the list 
+  // print(cameras);
+  cam = new Capture(this, width, height, cameras[0]);
+
   cam.start();
   numPixels = cam.width * cam.height;
   frameAverage = new int[numPixels]; // initialized with 0
