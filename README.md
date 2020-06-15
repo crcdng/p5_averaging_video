@@ -7,7 +7,7 @@ Leave it running for a while. Click to save a screenshot into the sketch folder.
 
 Written in [Processing 3](https://processing.org/) in 2017 using the P5 Video library. Updated to run on Mac OSX 10.5 Catalina (see below).
 
-To run, download the ZIP file, unpack and rename the folder to `p5_sensory_con_fusion`. Copy this folder into your Processing sketch folder. You might have to install the P5 Video library from the Processing GUI (`Sketch -> Import Library -> Add Library`).
+To run, download the ZIP file, unpack and rename the folder to `p5_averaging_video`. Copy this folder into your Processing sketch folder. You may have to install the P5 Video library from the Processing GUI (`Sketch -> Import Library -> Add Library`).
 
 Read the comments in the sketch file for details and current issues.
  

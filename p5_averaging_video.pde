@@ -11,7 +11,7 @@ void setup() {
   // Video library 1.0.1
   // cam = new Capture(this, width, height);
   
-  // Video library 2.0-beta-4, Mac OSX 15 Catilina
+  // Video library 2.0-beta-4, Mac OSX 15 Catalina
   String[] cameras = Capture.list();
   // if you have more than one (virtual) cameras, select from the list 
   // print(cameras);
