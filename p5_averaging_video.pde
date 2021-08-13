@@ -11,9 +11,9 @@ void setup() {
   // Video library 1.0.1
   // cam = new Capture(this, width, height);
   
-  // Video library 2.0-beta-4, Mac OSX 15 Catalina
+  // Video library 2.0-beta-4, macOS Big Sur
   String[] cameras = Capture.list();
-  // if you have more than one (virtual) cameras, select from the list 
+  // if you have more than one (virtual) camera, uncomment the next line and select from the list 
   // print(cameras);
   cam = new Capture(this, width, height, cameras[0]);
 
@@ -49,6 +49,7 @@ void draw() {
 }
 
 void mouseClicked() {
+  print("hello");
   String filename = "" + year() + "_" + month() + "_" + day() + "_" + hour() + "_" + minute() + "_" + second() + "_" + "averaging.png";
   saveFrame(filename);
 }
